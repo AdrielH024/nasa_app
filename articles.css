@@ -1,0 +1,10 @@
+.article-topics, p{
+    border-radius: 10px;
+    height: 30px;
+    width: fit-content;
+    font-size: 20;
+}
+
+h1{
+    font-size: 30px;
+}
