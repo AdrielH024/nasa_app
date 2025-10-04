@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Article Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <div class="w-full nasa-dark-blue text-white shadow-md">
+        
+        <header class="container mx-auto px-4 py-3 flex justify-between items-center">
+    
+            <div class="flex items-center space-x-3">
+                <div class="w-16 h-16 border-2 border-white rounded-full flex items-center justify-center">
+                     <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider">NASA</h1>
+                    <p class="text-sm font-light">INTERNATIONAL<br>SPACE APPS<br>CHALLENGE</p>
+                </div>
+            </div>
+           
+            <div class="flex items-center space-x-2">
+                 <span class="text-2xl text-yellow-400">⭐</span>
+                <div>
+                    <h2 class="text-2xl font-bold">Barra de Espaço</h2>
+                    <p class="text-right text-xs tracking-widest">SPACE BAR</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="container mx-auto px-4">
+            <ul class="flex space-x-2">
+                <li><a href="#" class="block px-4 py-2 bg-red-600 rounded-t-lg font-semibold">HOME</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">ABOUT NASA</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">HOW TO SEARCH</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">ARTICLES</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">BUY US COFFEE</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container mx-auto p-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Dashboard Principal</h2>
+            <div class="w-full h-96 bg-blue-500 rounded-lg flex items-center justify-center text-white text-2xl font-bold shadow-inner">
+                <p>ISSO AQUI VAI SER UM GRÁFICO</p>
+            </div>
+             
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-700">Pesquisar Artigos</h3>
+                <div class="mt-4 flex flex-col sm:flex-row gap-4">
+                    <input type="text" placeholder="Digite palavras-chave, autor ou ano..." class="flex-grow p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Pesquisar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
