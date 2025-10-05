@@ -13,16 +13,14 @@
             font-family: 'Inter', sans-serif;
         }
         .nasa-dark-blue {
-            background-color: #0B3D91;
+            background-color: #0B0426;
         }
     </style>
 </head>
 <body class="bg-gray-100">
 
     <div class="w-full nasa-dark-blue text-white shadow-md">
-        <!-- Cabeçalho com Logos -->
         <header class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo Esquerda: NASA Space Apps -->
             <div class="flex items-center space-x-3">
                 <div class="w-16 h-16 border-2 border-white rounded-full flex items-center justify-center">
                      <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -32,35 +30,30 @@
                     <p class="text-sm font-light">INTERNATIONAL<br>SPACE APPS<br>CHALLENGE</p>
                 </div>
             </div>
-            <!-- Logo Direita: Barra de Espaço -->
             <div class="flex items-center space-x-2">
                  <span class="text-2xl text-yellow-400">⭐</span>
                 <div>
-                    <h2 class="text-2xl font-bold">Barra de Espaçonave</h2>
+                    <h2 class="text-2xl font-bold">Barra de Espaço</h2>
                     <p class="text-right text-xs tracking-widest">SPACE BAR</p>
                 </div>
             </div>
         </header>
 
-        <!-- Barra de Navegação -->
-        <nav class="container mx-auto px-4">
-            <ul class="flex space-x-2">
-                <li><a href="index.html" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">HOME</a></li>
-                <li><a href="aboutNasa.html" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">ABOUT NASA</a></li>
-                <li><a href="howToSearch.html" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">HOW TO SEARCH</a></li>
-                 <!-- O link "ARTICLES" é o ativo -->
-                <li><a href="#" class="block px-4 py-2 bg-red-600 rounded-t-lg font-semibold">ARTICLES</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-white/20 rounded-md transition-colors">BUY US COFFEE</a></li>
+       <nav class="container main-nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutNasa.html">ABOUT NASA</a></li>
+                <li><a href="howToSearch.html" class="nav-item-active">HOW TO SEARCH</a></li>
+                <li><a href="articles.html">ARTICLES</a></li>
+                <li><a href="#">BUY US COFFEE</a></li>
             </ul>
         </nav>
     </div>
 
-    <!-- Conteúdo Principal -->
     <main class="container mx-auto p-8">
         <div class="bg-white rounded-lg shadow-lg p-6">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Pesquisar no Acervo da NASA</h2>
             
-            <!-- Seção de Pesquisa -->
             <div class="mb-8">
                 <div class="flex flex-col sm:flex-row gap-4">
                     <input type="text" placeholder="Digite palavras-chave, autor ou ano..." class="flex-grow p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -70,17 +63,14 @@
                 </div>
             </div>
 
-            <!-- Seção de Resultados -->
             <div>
                 <h3 class="text-xl font-semibold text-gray-700 mb-4">Resultados da Pesquisa</h3>
                 
                 <!-- Placeholder para quando não houver resultados -->
                 <!-- <p class="text-gray-500">Nenhum artigo encontrado. Tente uma nova busca.</p> -->
 
-                <!-- Grid de Resultados -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                    <!-- Exemplo de Card de Artigo 1 -->
                     <div class="border border-gray-200 rounded-lg p-4 flex flex-col hover:shadow-lg transition-shadow">
                         <h4 class="text-lg font-bold text-gray-900">Descobertas do Telescópio James Webb</h4>
                         <p class="text-sm text-gray-500 mt-1">Autor: Jane Doe | Ano: 2023</p>
